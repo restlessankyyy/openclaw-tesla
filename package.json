@@ -1,6 +1,6 @@
 {
   "name": "openclaw-tesla",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "Tesla vehicle control plugin for OpenClaw — lock, unlock, climate, charging, status, and more via the Tesla Fleet API.",
   "type": "module",
   "license": "MIT",
