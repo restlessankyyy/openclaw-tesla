@@ -1,0 +1,50 @@
+{
+  "name": "openclaw-tesla",
+  "version": "1.0.0",
+  "description": "Tesla vehicle control plugin for OpenClaw — lock, unlock, climate, charging, status, and more via the Tesla Fleet API.",
+  "type": "module",
+  "license": "MIT",
+  "author": "restlessankyyy",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/restlessankyyy/openclaw-tesla.git"
+  },
+  "keywords": [
+    "openclaw",
+    "openclaw-plugin",
+    "tesla",
+    "fleet-api",
+    "vehicle-control",
+    "iot",
+    "smart-home"
+  ],
+  "files": [
+    "index.ts",
+    "src/",
+    "openclaw.plugin.json",
+    "README.md",
+    "LICENSE"
+  ],
+  "openclaw": {
+    "extensions": [
+      "./index.ts"
+    ]
+  },
+  "dependencies": {
+    "@sinclair/typebox": "0.34.48"
+  },
+  "peerDependencies": {
+    "openclaw": ">=2025.0.0"
+  },
+  "devDependencies": {
+    "openclaw": "latest",
+    "typescript": "^5.7.0",
+    "vitest": "^3.0.0",
+    "@types/node": "^22.0.0"
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "test:watch": "vitest"
+  }
+}
